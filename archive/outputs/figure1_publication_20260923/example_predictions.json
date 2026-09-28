@@ -1,0 +1,22 @@
+{
+  "weight": 0.5,
+  "model": "Transformer",
+  "seed": 11,
+  "participant_index": 0,
+  "donor_index": 187,
+  "target_trial_one_based": 3,
+  "observed_target": "C",
+  "intact": [
+    0.09724565595388412,
+    0.07409137487411499,
+    0.7601926922798157,
+    0.06847020983695984
+  ],
+  "donor": [
+    0.07929521799087524,
+    0.06571497768163681,
+    0.7808011770248413,
+    0.07418859004974365
+  ],
+  "source_checkpoint": "outputs\\weight_neural_full_20260916\\transformer_reward_w050_full_seed11\\best.pt"
+}

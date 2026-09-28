@@ -1,0 +1,23 @@
+seed: 11
+# Override with --condition; never pool conditions into one model.
+condition: reward_dominant
+data_root: outputs/restless_pooled_minimal_20260827
+device: cuda
+precision: bf16
+batch_size: 128
+num_workers: 0
+learning_rate: 0.0003
+weight_decay: 0.01
+warmup_steps: 50
+grad_clip: 1.0
+max_epochs: 20
+early_stopping_patience: 4
+min_delta: 0.0001
+model:
+  vocab_size: 106
+  max_sequence_length: 401
+  d_model: 128
+  n_heads: 4
+  n_layers: 4
+  d_ff: 512
+  dropout: 0.1

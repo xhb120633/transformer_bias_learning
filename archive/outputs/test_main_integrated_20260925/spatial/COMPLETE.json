@@ -1,0 +1,27 @@
+{
+  "split": "test",
+  "test_used": true,
+  "scientific_audit_passed": true,
+  "main_complete": true,
+  "models": [
+    "oracle",
+    "fit",
+    "rw",
+    "gru",
+    "transformer",
+    "llama"
+  ],
+  "weights": [
+    "000",
+    "010",
+    "030",
+    "050",
+    "070",
+    "090",
+    "100"
+  ],
+  "donors": 20,
+  "participants_per_weight": 50,
+  "scoring": "maps7-8",
+  "appendix_operations_included": false
+}

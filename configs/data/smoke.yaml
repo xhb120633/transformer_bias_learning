@@ -1,0 +1,22 @@
+seed: 2026
+theta_values: [0.0, 0.7853981633974483, 1.5707963267948966]
+splits:
+  train: 32
+  val: 8
+  test: 8
+shard_size: 32
+generator:
+  n_trials: 160
+  reward_prob_high: 0.8
+  reward_prob_low: 0.2
+  reversal_centers: [40, 80, 120]
+  reversal_jitter: 7
+  min_block_length: 25
+  alpha_mean: 0.25
+  alpha_sd: 0.04
+  scale_mean: 1.5
+  scale_log_sd: 0.10
+  lapse_mean: 0.05
+  lapse_sd: 0.01
+  value_scale: 0.25
+

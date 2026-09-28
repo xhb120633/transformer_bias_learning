@@ -1,0 +1,22 @@
+seed: 11
+data_root: outputs/restless_pooled_eps10_1000_20260827
+device: cuda
+precision: bf16
+condition: reward_dominant
+batch_size: 128
+num_workers: 0
+learning_rate: 0.0003
+weight_decay: 0.01
+warmup_steps: 150
+grad_clip: 1.0
+max_epochs: 60
+early_stopping_patience: 8
+min_delta: 0.0002
+model:
+  vocab_size: 106
+  max_sequence_length: 401
+  d_model: 256
+  n_heads: 8
+  n_layers: 6
+  d_ff: 1024
+  dropout: 0.1

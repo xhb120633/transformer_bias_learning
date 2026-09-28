@@ -1,0 +1,23 @@
+seed: 11
+data_root: outputs/restless_pooled_minimal_20260827
+device: cuda
+precision: bf16
+# One condition at a time: 2,000 train / 500 validation / 500 test sessions.
+condition: choice_dominant
+batch_size: 128
+num_workers: 0
+learning_rate: 0.0005
+weight_decay: 0.01
+warmup_steps: 20
+grad_clip: 1.0
+max_epochs: 15
+early_stopping_patience: 4
+min_delta: 0.0001
+model:
+  vocab_size: 106
+  max_sequence_length: 401
+  d_model: 64
+  n_heads: 4
+  n_layers: 2
+  d_ff: 256
+  dropout: 0.1

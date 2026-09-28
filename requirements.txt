@@ -1,0 +1,6 @@
+# Python >=3.10. Installs the local package, analysis tools, and tests.
+-e .[analysis,test]
+
+# Needed for GRU/Transformer code and the bundled neural-model tests.
+# Select a platform-appropriate CUDA build separately for GPU training.
+torch

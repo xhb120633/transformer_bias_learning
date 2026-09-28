@@ -1,0 +1,30 @@
+seed: 2027
+base_participants: {train: 12, val: 6, test: 6}
+shard_size: 100
+calibration_participants: 8
+conditions:
+  - {name: reward_dominant, lambda_range: [0.10, 0.30]}
+  - {name: balanced, lambda_range: [0.40, 0.60]}
+  - {name: choice_dominant, lambda_range: [0.70, 0.90]}
+schedule_seeds:
+  calibration: {start: 900000, count: 8}
+  train: {start: 100000, count: 12}
+  val: {start: 200000, count: 6}
+  test: {start: 300000, count: 6}
+generator:
+  n_arms: 4
+  n_trials: 200
+  reward_center: 50.0
+  ou_decay: 0.9836
+  process_noise_sd: 2.8
+  observation_noise_sd: 4.0
+  reward_min: 0
+  reward_max: 100
+  initial_means: [35.0, 45.0, 55.0, 65.0]
+  alpha_mean: 0.25
+  alpha_concentration: 24.0
+  policy_scale_median: 2.25
+  policy_scale_log_sd: 0.15
+  lapse_mean: 0.05
+  lapse_concentration: 100.0
+  kernel_positive_probability: 0.5
